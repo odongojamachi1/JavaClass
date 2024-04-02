@@ -8,7 +8,7 @@ public class Calculator extends JFrame {
     private JButton addButton, subtractButton, multiplyButton, divideButton;
 
     public Calculator() {
-        setTitle("Simple Calculator");
+        setTitle("WANMIC TECH");
         setSize(300, 200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // Center the window
@@ -68,9 +68,9 @@ public class Calculator extends JFrame {
 
     private void calculate(char operator) {
         try {
-            double num1 = Double.parseDouble(numField1.getText());
-            double num2 = Double.parseDouble(numField2.getText());
-            double result = 0;
+            Long num1 = Long.parseLong(numField1.getText());
+            Long num2 = Long.parseLong(numField2.getText());
+            Long result = 0 + num1 + num2;
 
             switch (operator) {
                 case '+':
